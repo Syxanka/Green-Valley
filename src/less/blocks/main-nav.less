@@ -1,0 +1,25 @@
+.main-nav {
+	//прописывать ли flex
+	padding: 0px;
+    margin: 0 px; //отступы по бокам
+    display: inline;
+    margin-top: auto; //отступы сверху
+    display: inline;
+    text-decoration: none;
+    
+    &__list {
+        padding: 0;
+        margin: 0; //отступы по бокам
+        display: inline; //строчный элемент
+        list-style: none;
+     
+        font-family: @font-family; //прописываем шрифт  
+        
+		&__active {
+			display: flex;
+			padding-top: 0px;
+			color: @orangetext
+		}
+		
+            }
+}
