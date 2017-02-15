@@ -1,7 +1,7 @@
 body {
   min-width: 320px;
   margin: 0;
-  font-family: 'Open Sans_my', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   color: #000;
   font-weight: 700;
 }
@@ -11,6 +11,7 @@ body {
   -ms-flex-pack: center;
       justify-content: center;
   background-image: url();
+  width: 1200px;
 }
 .block-info__text {
   background: white;
@@ -23,9 +24,9 @@ body {
 }
 .btn {
   display: inline-block;
-  padding: 15px ;
+  padding: 5px;
   border-radius: 60px;
-  font-family: 'Open Sans_my', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   text-decoration: none;
   -ms-touch-action: none;
       touch-action: none;
@@ -97,36 +98,38 @@ footer__social {
 footer__info {
   float: right;
 }
-logo {
-  display: -ms-flexbox;
-  display: flex;
-}
 .main-nav {
-  padding: 0px;
-  margin: 0 px;
-  margin-top: auto;
-  display: inline;
-  text-decoration: none;
+  display: inline-block;
+  margin: 30px;
+  font-weight: normal;
+  color: #808080;
 }
 .main-nav__list {
   padding: 0;
   margin: 0;
   display: inline;
-  list-style: none;
-  font-family: 'Open Sans_my', sans-serif;
+  word-spacing: 15px;
+  font-family: 'Fira Sans', sans-serif;
 }
-.main-nav__list__active {
+.main-nav__active {
   display: -ms-flexbox;
   display: flex;
   padding-top: 0px;
-  color: #ff7435;
+}
+.main-nav__item {
+  display: inline-block;
+  text-decoration: none;
+}
+.main-nav__link {
+  display: inline-block;
+  text-decoration: none;
 }
 maps {
   display: block;
   padding-bottom: 30px;
 }
 maps__transport-title {
-  font-family: 'Open Sans_my', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 15px;
   margin-bottom: 30px;
   text-align: center;
@@ -138,26 +141,38 @@ maps__transport-img {
 }
 maps__transport-text {
   display: inline-block;
-  font-family: 'Open Sans_my', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   text-align: center;
 }
 .page-header {
-  display: inline-block;
+  border-bottom: 1px solid #ffffff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #fafafa;
-  margin-top: 5px;
-  margin: 0px;
-  height: 50px;
 }
-.page-header__addres {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  font-family: ;
-  font-weight: bold;
+.page-header__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.page-header__inner__contacts {
+  text-align: left;
+  display: none;
+  margin-left: 500px;
+  font-family: 'Fira Sans', sans-serif;
+  color: #808080;
 }
 @media (min-width: 992px) {
   maps {
     padding-bottom: 80px;
+  }
+  .page-header__inner {
+    text-align: left;
   }
 }
 

@@ -1,25 +1,31 @@
 .main-nav {
-	//прописывать ли flex
-	padding: 0px;
-    margin: 0 px; //отступы по бокам
-    display: inline;
-    margin-top: auto; //отступы сверху
-    display: inline;
-    text-decoration: none;
-    
+  display: inline-block;
+  margin: 30px;
+  font-weight: normal;
+  color: @color;
+
+
     &__list {
-        padding: 0;
-        margin: 0; //отступы по бокам
-        display: inline; //строчный элемент
-        list-style: none;
-     
-        font-family: @font-family; //прописываем шрифт  
-        
+      padding: 0;
+      margin: 0; //отступы по бокам
+      display: inline; //строчный элемент
+      word-spacing: 15px; //расстояние между элементами
+      font-family: @font-family; //прописываем шриф
+			}
+
 		&__active {
 			display: flex;
 			padding-top: 0px;
-			color: @orangetext
+
 		}
-		
-            }
+
+		&__item {
+			display: inline-block;
+	    text-decoration: none;
+		}
+
+		&__link {
+		display: inline-block;
+		text-decoration: none;
+}
 }
