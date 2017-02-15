@@ -1,30 +1,49 @@
-.preview{
-    display: flex;
-    margin-top: ;//отступ от верха
-    justify-content: center;
-    background-image:; // прописать бэкгр фото.
-    
-    &__text{
-        color: black;
-        text-align: center;
-        }
+.preview {
+  text-align: center;
+  background-image: url(../img/fon.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  
+  &__tab {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-family: @font-family;
+    margin: 10px;
+    color: @color;
+  }
 
-        h2{
-			font-family:@ ; //
-            padding: 10px; // расстояние между блоками
-        }
+  & a{
+    color: #ff7435;
+  }
 
-        p{
-            font-family:@ ; //
-            padding: 10px; // расстояние между блоками
-        }
+  &__main {
+    display: block;
+    text-align: center;
+    font-family: @font-family;
+    font-weight: lighter;
+    color: @colorgrey;
+  }
 
-    &__preview-staf{
-        display: inline-flex;
-        justify-content: center;
+  &__norm {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5em;
+      }
+
+  &__staf {
+    list-style: none;
 		text-align: center;
-		font-family: @;
-        font-size: small;
-        }
-}
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+    font-family: @font-family;
 
+    li {
+      width: 90px;
+      margin-bottom: 20px;
+			text-align: center;
+			font-size: 14px;
+    }
+  }
+}

@@ -156,11 +156,51 @@ maps__transport-text {
   padding: 20px;
   font-weight: lighter;
 }
-.slider-tabs {
+.preview {
+  text-align: center;
+  background-image: url(../img/fon.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.preview__tab {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 10px;
+  color: #808080;
+}
+.preview a {
+  color: #ff7435;
+}
+.preview__main {
+  display: block;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: lighter;
+  color: #464544;
+}
+.preview__norm {
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5em;
+}
+.preview__staf {
+  list-style: none;
+  text-align: center;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
+  font-family: 'Fira Sans', sans-serif;
+}
+.preview__staf li {
+  width: 90px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 @media (min-width: 992px) {
   maps {
