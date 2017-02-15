@@ -5,22 +5,24 @@ body {
   color: #000;
   font-weight: 700;
 }
-.block-info {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background-image: url();
-  width: 1200px;
+.promo {
+  display: block;
 }
-.block-info__text {
+.promo__title {
   background: white;
-  color: black;
-  padding: ;
+  width: 35%;
 }
-.block-info__img {
-  padding: ;
-  margin-top: ;
+.promo__text {
+  background: white;
+  width: 35%;
+}
+.promo__main {
+  margin-left: 150px;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: normal;
 }
 .btn {
   display: inline-block;
@@ -103,24 +105,18 @@ footer__info {
   margin: 30px;
   font-weight: normal;
   color: #808080;
+  line-height: normal;
 }
 .main-nav__list {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
   display: inline;
   word-spacing: 15px;
   font-family: 'Fira Sans', sans-serif;
 }
-.main-nav__active {
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 0px;
+.main-nav__link__active {
+  color: #ff7435;
 }
 .main-nav__item {
-  display: inline-block;
-  text-decoration: none;
-}
-.main-nav__link {
   display: inline-block;
   text-decoration: none;
 }
@@ -145,34 +141,30 @@ maps__transport-text {
   text-align: center;
 }
 .page-header {
-  border-bottom: 1px solid #ffffff;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
   background-color: #fafafa;
+  padding: 10px;
 }
-.page-header__inner {
+.page-header__logo {
+  margin: 6px;
+}
+.page-header__contacts {
+  font-family: 'Fira Sans', sans-serif;
+  padding: 20px;
+  font-weight: lighter;
+}
+.slider-tabs {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-}
-.page-header__inner__contacts {
-  text-align: left;
-  display: none;
-  margin-left: 500px;
-  font-family: 'Fira Sans', sans-serif;
-  color: #808080;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 @media (min-width: 992px) {
   maps {
     padding-bottom: 80px;
-  }
-  .page-header__inner {
-    text-align: left;
   }
 }
 
