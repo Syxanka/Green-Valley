@@ -76,27 +76,34 @@ body {
   border: white solid 4px;
   margin-top: -50px;
 }
-footer {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  border: 1px solid;
+.footer {
+  padding: 40px;
+  border-top: 1px solid #ebebeb;
 }
-footer__addres {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+.footer__addres {
+  float: left;
 }
-footer__logo {
-  text-align: center;
+.footer__addres-txt {
+  color: #808080;
+  font-family: 'Fira Sans', sans-serif;
 }
-footer__social {
-  float: center;
-}
-footer__info {
+.footer__info {
   float: right;
+}
+.footer a {
+  text-decoration: none;
+  color: #808080;
+}
+.footer__social {
+  text-align: center;
+  margin-top: 5px;
+}
+.footer__social-item {
+  display: inline-block;
+  margin-right: 40px;
+}
+.logo {
+  text-align: center;
 }
 .main-nav {
   display: inline-block;
@@ -123,7 +130,7 @@ footer__info {
 }
 .maps__text {
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'Fira Sans', sans-serif;
   color: #808080;
 }
@@ -141,19 +148,17 @@ footer__info {
   margin-left: 200px;
   margin-right: 200px;
 }
+.maps__transport-txt {
+  color: #808080;
+}
 .maps__bus {
-  background-image: url(../img/bus.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80px;
   padding-top: 40px;
 }
 .maps__train {
-  background-image: url(../img/electro.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80px;
   padding-top: 40px;
+}
+.maps__photo {
+  text-align: center;
 }
 .page-header {
   display: -ms-flexbox;
@@ -250,6 +255,47 @@ footer__info {
 }
 .stock__info--label {
   color: #ff7435;
+}
+.offer {
+  background-image: url(../img/end.png);
+  background-repeat: no-repeat;
+  display: block;
+  text-align: center;
+}
+.offer__title {
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  line-height: 50px;
+}
+.offer__card {
+  border: 1px solid #1da694;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 50px;
+  padding: 0px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px;
+}
+.offer__card-text {
+  background-color: white;
+  padding: 30px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.offer__card-text span {
+  color: #ff7435;
+}
+.offer__card-text strong {
+  font-family: 'Fira Sans', sans-serif;
+  display: block;
+  font-size: 26px;
+  line-height: 19px;
+  margin-bottom: 13px;
+  text-transform: none;
 }
 
 /*# sourceMappingURL=style.css.map */
