@@ -69,8 +69,8 @@
   </div>
 
 <div class="review">
-    <div class="review__photo">
-        <img class="review__photo" src="img/main.png"/>
+    <div class="review__main">
+        <img class="review__main-img" src="img/main.png"/>
     </div>
     <div class="review__all">
         <img class="review__all" src="img/rew3.png"/>
@@ -83,60 +83,87 @@
 </div>
 
 <div class="comment">
-    <div class="comment__bg">
-		<h2>Отзывы</h2>
-        <img class="comment__img" src="img/bike.png">
-    </div>
-    <div class="comment__item">
-        <div class="comment__item-img" src=img/ava1.png>Екатерина В.
-            <a href="#">vk</a>
-        </div>
-        <div class="comment__item-text">
-            <p>Наша семья счастлива, что открыла для себя Green Valley. Замечательный комфортный отдых.Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
-            <p>Дата отдыха: <br> 01.06.2015-08.06.2015</p>
-        </div>
-	</div>
-    <div class="comment__item">
-        <div class="comment__item-img" src=img/ava1.png>Екатерина В.
-            <a href="#">fb</a>
-        </div>
-        <div class="comment__item-text">
-            <p>Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
-            <p>Дата отдыха: <br>15.05.2015-20.05.2015</p>
+		<h2 class="comment__label">Отзывы</h2>
+    <div class="comment__recalls">
+        <div class="comment__item">
+            <img class="comment__img" src = "img/ava1.png"><br>Екатерина В.
+            <div class="comment_social">
+                <a href="#">vk</a>
+            </div>
+            <div class="comment__item-text">
+                <p>Наша семья счастлива, что открыла для себя Green Valley. Замечательный комфортный отдых.Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
+                <p>Дата отдыха: <br> 01.06.2015-08.06.2015</p>
+            </div>
+	      </div>
+        <div class="comment__item">
+            <img class="comment__img" src = "img/ava1.png"><br>Вася П.
+            <div class="comment_social">
+              <a href="#">fb</a>
+            </div>
+            <div class="comment__item-text">
+                <p>Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
+                <p>Дата отдыха: <br>15.05.2015-20.05.2015</p>
+            </div>
         </div>
     </div>
     <div class="comment__all">
-        <a href ="#" class="btn btn--border">Все отзывы</a>
+        <a href ="#" class="comment__all-btn">
+        <img class="comment__all-btn" src="img/all.png">
+        </a>
     </div>
 </div>
 
 <div class="stock">
-    <div class="stock__main">
-        <H1>Акции и предложения</H1>
-	    <img class="stock__img" src="img/photo.png"/>
-	    <!-- <img class="stock__main" src="img/photo.png"/> -->
-	</div>
-    <div class="stock__text">
-        <h2>Скидки в мае</h2>
+
+    <div class="stock__label">
+        <h1 class="stock__label-txt">Акции и предложения</h1>
+	  </div>
+
+    <div class="stock__item">
+      <div class="stock__info">
+        <h2 class="stock__info--label">Скидки в мае</h2>
         <p>Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10%!</p>
+      </div>
     </div>
+
 	<div class="stock__rounds">
 		<a href="" class="stock__round stock__round--active"></a>
 		<a href="" class="stock__round"></a>
 	</div>
+
 </div>
 
 <div class="maps">
     <div class="maps__text">
-        <H1>Как до нас добраться</H1>
+      <h1 class="maps__text-main">Как до нас добраться</h1>
     </div>
     <div class="maps__img">
 	   <img class="maps__img-img" src="img/maps.png"/>
     </div>
-    <div class="maps__bus">
-        <img class="maps__transport-img" src="img/bus.png">
+    <div class="maps__transport">
+      <div class="maps__bus">
+      <!-- <img class="maps__bus-img" src="img/bus.png"> -->
+      <h2 class="maps__transport-title">Автобусы</h2>
+      <p class="maps__transport-txt">
+      <strong>№211</strong> от станции метро "Чёрная речка" до остановки <br /> "Санаторий репино"<br>
+      <strong>№305к</strong> от станции метро "Старая деревня"<br>
+      <strong>№680к</strong> от станции метро "Проспект Просвещения"<br>
+      <strong>№400к</strong> от станции метро "Площадь Ленина"
+      </p>
+    </div>
+    <div class="maps__train">
+      <!-- <img class="maps_train-img" src="img/electro.png"> -->
+      <h2 class="maps__transport-title">Электропоезд</h2>
+      <p class="maps__transport-txt">Электропоезд Выборгского направления <br />
+      от Финляндского вокзала Санкт-Петербурга<br /> до платформы "Репино"
+      </p>
+    </div>
+</div>
+</div>
+    <!-- <div class="maps__bus">
+        <img class="maps__bus-img" src="img/bus.png">
 		<h2 class="maps__transport-title"><strong>Автобус</strong></h2>
-        <p class="maps__transport-text"><strong>№211</strong> от станции метро "Чёрная речка" до остановки "Санаторий репино"<br>
+        <p class="maps__transport-text"><strong>№211</strong> от станции метро "Чёрная речка" до остановки <br /> "Санаторий репино"<br>
         <strong>№305к</strong> от станции метро "Старая деревня"<br>
         <strong>№680к</strong> от станции метро "Проспект Просвещения"<br>
         <strong>№400к</strong> от станции метро "Площадь Ленина"
@@ -145,9 +172,9 @@
     <div class="maps__electro">
         <img class="maps__transport-img" src="img/electro.png">
         <h2 clas="maps__transport-title">Электропоезд</h2>
-        <p class="maps__transport-text">Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы "Репино"</p>
+        <p class="maps__transport-text">Электропоезд Выборгского направления <br /> от Финляндского вокзала Санкт-Петербурга<br /> до платформы "Репино"</p>
     </div>
-</div>
+</div> -->
 
 <div class="offer">
     <div class="offer__text">

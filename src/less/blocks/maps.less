@@ -1,51 +1,43 @@
-maps {
-	display: block;
-	padding-bottom: 30px; //расстояние поля от нижнего элемента
-	
-	@media (min-width:@screen-md){
-		padding-bottom: 80px;
-	}
-	
-//&__maps-text {
-		//font-family: @font-family;
-		//font-size: 20px;
-		//text-align: center;
-		//margin-bottom: 30px; // величина отступа от нижнего края
-	//}
-	
-	//&__maps-bus{
-	//	display: block;
-	//	float: left;
-	//}
-	
-	//&__maps-electro {
-	//	display: block;
-	//	float: right;
-	//}
-	// 
-	&__bus {
-		//
-	}
-	&__electro {
-		//
-	}
-	
-	&__transport-title {
-		font-family: @font-family;
+.maps {
+	padding: 5%;
+
+	&__text {
+		text-align: center;
 		font-size: 15px;
-		margin-bottom: 30px;
-		text-align: center;
-	}
-	
-	&__transport-img {
-		display: block;
-		margin: 0px;
-		margin-bottom: 30px;
-	}
-	
-	&__transport-text {
-		display: inline-block;
 		font-family: @font-family;
+		color: @color;
+	}
+
+	&__img {
 		text-align: center;
 	}
+
+		h2 {
+			text-align: center;
+		}
+
+	&__transport {
+		display: flex;
+		justify-content: space-around;;
+		margin-left: 200px;
+		margin-right: 200px;
+		}
+
+	&__bus {
+		background-image: url(../img/bus.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80px;
+		padding-top: 40px;
+	}
+
+	&__train {
+		background-image: url(../img/electro.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 80px;
+		padding-top: 40px;
+		padding-top: 40px;
+	}
+
 }

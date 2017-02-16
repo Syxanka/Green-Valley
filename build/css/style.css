@@ -34,49 +34,47 @@ body {
       touch-action: none;
 }
 .comment {
+  margin-top: 50px;
+  background-size: cover;
+  padding-top: 5px;
+  background-image: url(../img/bike.png);
+}
+.comment__recalls {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: ;
-  background: ;
+  padding: 50px;
+  padding: 0px;
 }
-.comment__comment1 {
-  float: left;
+.comment__label {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  color: white;
+}
+.comment__item {
+  text-align: center;
   background: white;
-  background-size: ;
-  margin-top: ;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 400px;
 }
-.comment__comment1 .text {
-  font-family: ;
-  font-size: ;
+.comment__item-text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: lighter;
+  color: #B5B5B5;
 }
-.comment__comment1 .img {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+.comment__all {
+  text-align: center;
+  padding: 15px;
 }
-.comment__comment2 {
-  float: right;
-  background: white;
-  background-size: ;
-  margin-top: ;
-}
-.comment__comment2 .text {
-  font-family: ;
-  font-size: ;
-}
-.comment__comment2 .img {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-.comment__btn {
-  color: ;
-  font-family: ;
-  font-size: ;
+.comment__img {
+  border: white solid 4px;
+  margin-top: -50px;
 }
 footer {
   display: -ms-flexbox;
@@ -120,25 +118,42 @@ footer__info {
   display: inline-block;
   text-decoration: none;
 }
-maps {
-  display: block;
-  padding-bottom: 30px;
+.maps {
+  padding: 5%;
 }
-maps__transport-title {
-  font-family: 'Fira Sans', sans-serif;
+.maps__text {
+  text-align: center;
   font-size: 15px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-maps__transport-img {
-  display: block;
-  margin: 0px;
-  margin-bottom: 30px;
-}
-maps__transport-text {
-  display: inline-block;
   font-family: 'Fira Sans', sans-serif;
+  color: #808080;
+}
+.maps__img {
   text-align: center;
+}
+.maps h2 {
+  text-align: center;
+}
+.maps__transport {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.maps__bus {
+  background-image: url(../img/bus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  padding-top: 40px;
+}
+.maps__train {
+  background-image: url(../img/electro.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  padding-top: 40px;
 }
 .page-header {
   display: -ms-flexbox;
@@ -202,10 +217,39 @@ maps__transport-text {
   text-align: center;
   font-size: 14px;
 }
-@media (min-width: 992px) {
-  maps {
-    padding-bottom: 80px;
-  }
+.review {
+  position: relative;
+  text-align: center;
+  display: block;
+}
+.stock {
+  text-align: center;
+}
+.stock__label {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: lighter;
+  color: #808080;
+  border: solid 1px;
+}
+.stock__item {
+  background-image: url(../img/photo.png);
+  background-repeat: no-repeat;
+  margin-left: 130px;
+  width: 1150px;
+  height: 330px;
+}
+.stock__info {
+  text-align: left;
+  background: white;
+  width: 35%;
+  opacity: 0.9;
+  margin-top: 180px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.stock__info--label {
+  color: #ff7435;
 }
 
 /*# sourceMappingURL=style.css.map */
