@@ -1,12 +1,15 @@
 body {
   min-width: 320px;
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   font-family: 'Fira Sans', sans-serif;
   color: #000;
   font-weight: 700;
 }
 .promo {
-  display: block;
+  background-image: url(../img/mainphoto.png);
+  background-repeat: no-repeat;
+  border: solid 1px;
 }
 .promo__title {
   background: white;
@@ -17,8 +20,7 @@ body {
   width: 35%;
 }
 .promo__main {
-  margin-left: 150px;
-  position: absolute;
+  float: left;
   top: 200px;
   width: 100%;
   font-family: 'Fira Sans', sans-serif;
@@ -77,7 +79,11 @@ body {
   margin-top: -50px;
 }
 .footer {
-  padding: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
   border-top: 1px solid #ebebeb;
 }
 .footer__addres {
@@ -96,11 +102,12 @@ body {
 }
 .footer__social {
   text-align: center;
-  margin-top: 5px;
 }
 .footer__social-item {
   display: inline-block;
-  margin-right: 40px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .logo {
   text-align: center;
@@ -126,7 +133,7 @@ body {
   text-decoration: none;
 }
 .maps {
-  padding: 5%;
+  padding-top: 50px;
 }
 .maps__text {
   text-align: center;
@@ -134,8 +141,16 @@ body {
   font-family: 'Fira Sans', sans-serif;
   color: #808080;
 }
-.maps__img {
-  text-align: center;
+.maps__text-main {
+  font-size: 16px;
+}
+.maps__map {
+  height: 400px;
+  width: 1200px;
+}
+.maps__map iframe {
+  width: 100%;
+  height: 100%;
 }
 .maps h2 {
   text-align: center;
@@ -229,26 +244,29 @@ body {
 }
 .stock {
   text-align: center;
+  border: solid 1px;
+  border-color: white;
 }
 .stock__label {
   font-family: 'Fira Sans', sans-serif;
   font-weight: lighter;
   color: #808080;
-  border: solid 1px;
 }
 .stock__item {
+  display: inline-block;
   background-image: url(../img/photo.png);
   background-repeat: no-repeat;
-  margin-left: 130px;
-  width: 1150px;
+  width: 1200px;
   height: 330px;
+  border: solid 1px;
+  border-color: white;
 }
 .stock__info {
+  margin-top: 180px;
   text-align: left;
   background: white;
   width: 35%;
   opacity: 0.9;
-  margin-top: 180px;
   padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -270,6 +288,7 @@ body {
   line-height: 50px;
 }
 .offer__card {
+  background-color: white;
   border: 1px solid #1da694;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -280,7 +299,6 @@ body {
   margin: 10px;
 }
 .offer__card-text {
-  background-color: white;
   padding: 30px 15px;
   text-align: center;
   text-transform: uppercase;

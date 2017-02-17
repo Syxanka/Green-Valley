@@ -1,33 +1,41 @@
 .stock {
     text-align: center;
+    //display: inline-block;
+    border: solid 1px;
+    border-color: white;
 
   &__label {
     font-family: @font-family;
     font-weight: lighter;
     color: @color;
+    //border: solid 1px;
+      }
+
+  &__item {
+    display: inline-block;
+    //text-align: center;
+    //padding-bottom: 180px;
+    background-image: url(../img/photo.png);
+    background-repeat: no-repeat;
+    //margin-left: 130px;
+    width: 1200px;
+    height: 330px;
     border: solid 1px;
+    border-color: white;
       }
 
-      &__item {
-        background-image: url(../img/photo.png);
-        background-repeat: no-repeat;
-        margin-left: 130px;
-        width: 1150px;
-        height: 330px;
-      }
+  &__info {
+    margin-top: 180px;
+    text-align: left;
+    background: white;
+    width: 35%;
+    opacity: 0.9;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-      &__info {
-        text-align: left;
-        background: white;
-        width: 35%;
-        opacity: 0.9;
-        margin-top: 180px;
-        padding-left: 25px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-      &--label {
+    &--label {
         color: @colororange;
-          }
         }
-      }
+    }
+}
