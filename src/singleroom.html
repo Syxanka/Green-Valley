@@ -2,110 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Single Room</title>
-    <link rel="stylesheet" href="../build/css/style.css">
+    <title>Room</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
 </head>
-	
-<body>
-	
-<header class="page-header"> 
-    <div class="page-header__inner">
-        <a href="logo" class="logo">
-            <img class="logo" src ="img/logo.png">
-        </a>
-        <div class="main-nav">
-            <ul class="main-nav__list">
-				<li сlass="main-nav__list--active">><a class="" href="room.html">номера</a></li>
-				<li class="main-nav__list"><a class="" href="singleroom.html">коттедж</a></li>
-                <li class="main-nav__list">ресторан</li>
-                <li class="main-nav__list">отдых</li>
-                <li class="main-nav__list">контакты</li>
-            </ul>
-        </div>
-    </div>
-    <div class="page-header__addres">
-        <a href="tel: +7 812 77 55 88">+7 812 77 55 88</a>
-        <p>г. Санкт-Петербург, Приморское ш. 600</p>
-    </div>
-            <div class="btn">
-                <a href ="#" class="btn btn-orange">
-<!--                <img class="btn" src="img/btn.png">-->
-                </a>
-            </div>
-</header>
-	
-<div class="room-ecomon">
-	<h3 class="room-ecomon__text">Эконом</h3>
-	<img class="room-ecomon__img" src="img/econom_room.png">
-	<p>От<span class="orangtext"> 3400 </span>руб./сутки</p>
-	<div class="room-ecomon__description">
-		<h3 class="room-ecomon__about">О номере</h3>
-		<p>В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны <br> на проживание 1-2 человек. Часть номеров с видом на Финский залив.</p>
-		<div class="room-ecomon__list">
-		<h3 class="room-ecomon__text">Удобства</h3>
-		<ul class="room-ecomon__list-all">
-			<li>WI-Fi</li>
-			<li>Двуспальная кровать</li>
-			<li>Кресло</li>
-			<li>Раскладывающийся диван</li>
-			<li>Фен</li>
-			<li>Рабочий стол</li>
-			<li>Шкаф для одежды</li>
-			<li>Багажная тумба</li>
-			<li>Сейф</li>
-		</ul>
-		</div>
-		<div class="room-ecomon__price">
-		<h3 class="room-ecomon__text-">В стоимость входит</h3>
-		<ul class="room-ecomon__price-all">
-			<li>Бассейн с 8.30 до 10.00</li>
-			<li>Завтрак и обед "шведский стол"</li>
-		</ul>
-		</div>
-	</div>
-</div>	
 
-<div class="other-room">
-	<div class="other-room__category">
-	<img class="other-room__img" src="img/standart_room.png">
-	<div class="other-room__category-text"><strong> Стандарт </strong>от <span class="orangetext"> 4000 </span> руб./сутки</div>	
-	</div>	
-	<div class="other-room__category">
-	<img class="other-room__img" src="img/standart+room.png">
-	<div class="other-room__category-text"><strong> Стандарт + </strong> от <span class="orangetext"> 4500 </span> руб./сутки</div>
+<body>
+
+  <header class="page-header">
+      <div class="page-header__logo">
+              <img class="page-header__logo" src ="img/logo.png">
+          </div>
+          <div class="main-nav">
+              <ul class="main-nav__list">
+  				        <li class="main-nav__item"><a class="main-nav__link__active">НОМЕРА</a></li>
+  				        <li class="main-nav__item"><a class="main-nav__link">КОТТЕДЖ</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link">РЕСТОРАН</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link">ОТДЫХ</li>
+                  <li class="main-nav__item"><a class="main-nav__link">КОНТАКТЫ</li>
+              </ul>
+          </div>
+      <div class="page-header__contacts">+7 812 777 - 55 - 88<br>
+              г. Санкт-Петербург, Приморское ш. 600
+      </div>
+      <div class="btn">
+          <a href ="#" class="btn btn-botton">
+                <img class="btn" src="img/btn.png">
+          </a>
+      </div>
+  </header>
+
+<div class="room-card">
+  <div class="room-card__about">
+	  <h1 class="room-card__title"><strong>Эконом</strong><br />От<span> 3400 </span>руб./сутки</h1>
+  </div>
+      <div class="room-card__photo">
+        <img class="room-card__photo" src="img/econom.png"/>
+      </div>
+	    <div class="room-card__description">
+		    <h2 class="room-card__text">О номере</h2>
+		      <p>В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны <br> на проживание 1-2 человек. Часть номеров с видом на Финский залив.</p>
+      </div>
+    <div class="room-card__list">
+  		<h2 class="room-card__text">Удобства</h2>
+		    <ul class="room-card__all">
+			    <li>WI-Fi</li>
+			    <li>Двуспальная кровать</li>
+			    <li>Кресло</li>
+			    <li>Раскладывающийся диван</li>
+			    <li>Фен</li>
+			    <li>Рабочий стол</li>
+			    <li>Шкаф для одежды</li>
+			    <li>Багажная тумба</li>
+			    <li>Сейф</li>
+		  </ul>
+		</div>
+		<div class="room-card__price">
+		  <h2 class="room-card__text">В стоимость входит</h2>
+		  <ul class="room-card__all">
+			  <li>Бассейн с 8.30 до 10.00</li>
+			  <li>Завтрак и обед "шведский стол"</li>
+		</ul>
+		</div>
 	</div>
-	<div class="other-room__category">
-	<img class="other-room__img" src="img/lux_room.png">
-	<div class="other-room__category-text"><strong> Люкс </strong> от <span class="orangetext"> 5700 </span> руб./сутки</div>
-	</div>	
+</div>
+<div class="room-card__btn">
+  <img class="room-card__btn" src="img/btn.png">
+  <p>от <span> 3400 </span> руб./сутки </p>
+
 </div>
 
-	
-		
+<div class="room-card__category">
+	  <div class="room-card__item">
+	      <img class="room-card__item-img" src="img/room_standart.png">
+	      <div class="room-card__item-text"><strong> Стандарт </strong><br/>от <span> 4000 </span> руб./сутки
+        </div>
+	  </div>
+	  <div class="room-card__item">
+	      <img class="room-card__item-img" src="img/room_standar+.png">
+	      <div class="room-card__item-text"><strong> Стандарт + </strong><br /> от <span> 4500 </span> руб./сутки
+        </div>
+	  </div>
+	  <div class="room-card__item">
+	      <img class="room-card__item-img" src="img/lux.png">
+	      <div class="room-card__item-text"><strong> Люкс </strong><br /> от <span> 5700 </span> руб./сутки
+        </div>
+	  </div>
+</div>
+
 <div class="footer">
-   <div class="footer__addres">
-      <p>г. Санкт-Петербург <br> Приморское ш. 600</p>
-   </div>
-    <div class="logo">
-        <a href="#"><img class=footer__logo-img src="img/logo.png"></a>
+    <div class="footer__addres">
+        <p class="footer__addres-txt">г. Санкт-Петербург <br> Приморское ш. 600</p>
     </div>
-    <div class="footer__social">
-        <img class="footer__social" src="img/vk.png"/>
-        <img class="footer__social" src="img/inst.png"/>
-        <img class="footer__social" src="img/fb.png"/>
+    <div class="footer__ls">
+        <div class="logo">
+            <a href="#"><img class=footer__logo-img src="img/logo.png"></a>
+        </div>
+        <div class="footer__social">
+            <img class="footer__social-item" src="img/vk.png"/>
+            <img class="footer__social-item" src="img/inst.png"/>
+            <img class="footer__social-item" src="img/fb.png"/>
+        </div>
     </div>
     <div class="footer__info">
-       <a href="tel: +7 812 77 55 88">+7 812 77 55 88</a><br>
-       <a href="mailto: info@greenvalley.ru">info@greenvalley.ru</a> 
+        <p>+7 (812) 775 - 55 - 88<br>
+        <a href="mailto: info@greenvalley.ru">info@greenvalley.ru</a>
+        </p>
     </div>
-</div>	
-       
+</div>
+
+
 </body>
-</html>	
-	
-
-		
-
-     
-	
+</html>

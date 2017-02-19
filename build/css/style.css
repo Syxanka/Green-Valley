@@ -367,5 +367,51 @@ body {
   text-decoration: none;
   color: #808080;
 }
+.room-card {
+  padding-top: 30px;
+}
+.room-card__about {
+  text-align: center;
+}
+.room-card__about span {
+  color: #ff7435;
+}
+.room-card__photo {
+  float: right;
+}
+.room-card__discription {
+  font-family: 'Fira Sans', sans-serif;
+}
+.room-card__btn {
+  text-align: center;
+}
+.room-card__btn span {
+  color: #ff7435;
+}
+.room-card__category {
+  background-color: #fafafa;
+  height: 400px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+}
+.room-card__item {
+  background: white;
+  height: 350px;
+  border: 1px solid #ebebeb;
+}
+.room-card__item-text {
+  text-align: center;
+  padding: 30px;
+}
+.room-card__item-text strong {
+  font-size: 25px;
+}
+.room-card__item-text span {
+  color: #ff7435;
+}
 
 /*# sourceMappingURL=style.css.map */
