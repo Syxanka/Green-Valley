@@ -6,11 +6,6 @@ body {
   color: #000;
   font-weight: 700;
 }
-.promo {
-  background-image: url(../img/mainphoto.png);
-  background-repeat: no-repeat;
-  border: solid 1px;
-}
 .promo__title {
   background: white;
   width: 35%;
@@ -116,7 +111,6 @@ body {
   display: inline-block;
   margin: 30px;
   font-weight: normal;
-  color: #808080;
   line-height: normal;
 }
 .main-nav__list {
@@ -314,6 +308,18 @@ body {
   line-height: 19px;
   margin-bottom: 13px;
   text-transform: none;
+}
+.main {
+  display: block;
+  background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
+}
+.main__text {
+  font-size: 23px;
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
