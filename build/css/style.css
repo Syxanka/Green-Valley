@@ -6,13 +6,18 @@ body {
   color: #000;
   font-weight: 700;
 }
+.promo {
+  height: 400px;
+}
 .promo__title {
   background: white;
   width: 35%;
+  text-align: left;
 }
 .promo__text {
   background: white;
   width: 35%;
+  text-align: left;
 }
 .promo__main {
   float: left;
@@ -424,6 +429,19 @@ body {
 }
 .room-card__item-text span {
   color: #ff7435;
+}
+@media (min-width: 480px) {
+  .promo__text {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .promo {
+    height: 500px;
+  }
+  .promo__title {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

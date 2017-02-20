@@ -1,5 +1,8 @@
 .promo {
-//   //  height: 400px;
+ height: 400px;
+  @media (min-width: @screen-sm) {
+    height: 500px;
+  }
 //   //  width: 1200px;
 //    background-image: url('../img/mainphoto.png');
 //    background-repeat: no-repeat;
@@ -11,17 +14,27 @@
     &__title {
       background: white;
       width: 35%;
+      text-align: left;
 
+        @media (min-width: @screen-sm) {
+          text-align: left;
+          }
     }
     &__text {
       background: white;
       width: 35%;
+      text-align: left;
+
+        @media (min-width: @screen-xs){
+          text-align: center;
+        }
+
     }
 
     &__main {
       //display: block;
       //margin-left: 350px;
-      
+
       float: left;
 	    top: 200px;
 	    width: 100%;
