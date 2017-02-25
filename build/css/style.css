@@ -1,3 +1,4 @@
+@import '../../../owlcarousel/owl.carousel.css';
 body {
   min-width: 320px;
   max-width: 1200px;
@@ -7,14 +8,11 @@ body {
   font-weight: 700;
 }
 .promo {
-  background-image: url(../img.main.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 100%;
+  background-image: url(/img/mainphoto.png);
   height: 321px;
   box-sizing: border-box;
   padding-top: 20px;
+  background-repeat: no-repeat;
 }
 .promo__title {
   background: white;
@@ -437,6 +435,11 @@ body {
 }
 .room-card__item-text span {
   color: #ff7435;
+}
+@media (min-width: 768px){
+  .promo{
+    height: 500px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
