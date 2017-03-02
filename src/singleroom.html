@@ -1,45 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Room</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+@@include('_include/page-head.html')
 
-</head>
-
-<body>
-
-  <header class="page-header">
-      <div class="page-header__logo">
-              <a href="index.html"><img class="page-header__logo" src ="img/logo.png"></a>
-          </div>
-          <div class="main-nav">
-              <ul class="main-nav__list">
-  				        <li class="main-nav__item"><a class="main-nav__link__active">НОМЕРА</a></li>
-  				        <li class="main-nav__item"><a class="main-nav__link">КОТТЕДЖ</a></li>
-                  <li class="main-nav__item"><a class="main-nav__link">РЕСТОРАН</a></li>
-                  <li class="main-nav__item"><a class="main-nav__link">ОТДЫХ</li>
-                  <li class="main-nav__item"><a class="main-nav__link">КОНТАКТЫ</li>
-              </ul>
-          </div>
-      <div class="page-header__contacts">+7 812 777 - 55 - 88<br>
-              г. Санкт-Петербург, Приморское ш. 600
-      </div>
-      <div class="btn">
-          <a href ="form.html" class="btn btn-botton">
-                <img class="btn" src="img/btn.png">
-          </a>
-      </div>
-  </header>
 
 <div class="room-card">
   <div class="room-card__about">
 	  <h1 class="room-card__title"><strong>Эконом</strong><br />От<span> 3400 </span>руб./сутки</h1>
   </div>
       <div class="room-card__photo">
+<!--       <div id="room-card__gallery" class="room-card__slider owl-carousel">-->
+<!--        <img class="room-card__photo" src="img/econom.png"/>-->
         <img class="room-card__photo" src="img/econom.png"/>
+        </div>
       </div>
+      
 	    <div class="room-card__description">
 		    <h2 class="room-card__text">О номере</h2>
 		      <p>В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны <br> на проживание 1-2 человек. Часть номеров с видом на Финский залив.</p>
@@ -66,8 +38,8 @@
 		</ul>
 		</div>
 	</div>
-</div>
-<div class="room-card__btn">
+
+ <div class="room-card__btn">
   <img class="room-card__btn" src="img/btn.png">
   <p>от <span> 3400 </span> руб./сутки </p>
 
@@ -91,27 +63,4 @@
 	  </div>
 </div>
 
-<div class="footer">
-    <div class="footer__addres">
-        <p class="footer__addres-txt">г. Санкт-Петербург <br> Приморское ш. 600</p>
-    </div>
-    <div class="footer__ls">
-        <div class="logo">
-            <a href="index.html"><img class=footer__logo-img src="img/logo.png"></a>
-        </div>
-        <div class="footer__social">
-            <img class="footer__social-item" src="img/vk.png"/>
-            <img class="footer__social-item" src="img/inst.png"/>
-            <img class="footer__social-item" src="img/fb.png"/>
-        </div>
-    </div>
-    <div class="footer__info">
-        <p>+7 (812) 775 - 55 - 88<br>
-        <a href="mailto: info@greenvalley.ru">info@greenvalley.ru</a>
-        </p>
-    </div>
-</div>
-
-
-</body>
-</html>
+@@include('_include/footer.html')

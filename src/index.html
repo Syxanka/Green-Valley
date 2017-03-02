@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-    
-    <script src="js/script.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-
-</head>
-
-<body>
-
-  <header class="page-header">
-      <div class="page-header__logo">
-              <a href="index.html"><img class="page-header__logo" src ="img/logo.png"></a>
-          </a>
-      </div>
-          <div class="main-nav">
-              <ul class="main-nav__list">
-  				        <li class="main-nav__item"><a href="room.html" class="main-nav__link__active">НОМЕРА</a></li>
-  				        <li class="main-nav__item"><a class="main-nav__link">КОТТЕДЖ</a></li>
-                  <li class="main-nav__item"><a class="main-nav__link">РЕСТОРАН</a></li>
-                  <li class="main-nav__item"><a class="main-nav__link">ОТДЫХ</li>
-                  <li class="main-nav__item"><a class="main-nav__link">КОНТАКТЫ</li>
-              </ul>
-          </div>
-      <div class="page-header__contacts">+7 812 777 - 55 - 88<br>
-              г. Санкт-Петербург, Приморское ш. 600
-      </div>
-      <div class="btn">
-          <a href ="form.html" class="btn btn-botton">
-                <img class="btn" src="img/btn.png">
-          </a>
-      </div>
-  </header>
+@@include('_include/page-head.html')
 
 
 <div class="promo">
@@ -49,7 +12,7 @@
 <div class="preview">
     <ul class="preview__slider">
       <li class="preview__tab preview__tab--active"><a href="#family-relax">СЕМЕЙНЫЙ ОТДЫХ</a>
-      </a></li>
+      </li>
       <li class="preview__tab"><a class="preview__link">КОРПОРАТИВНЫЙ
 		  </a></li>
     </ul>
@@ -67,9 +30,8 @@
         <li class="previw__staf-img"><img src="img/ani.png"/>АНИМАЦИЯ</li>
     </ul>
     </div>
-  </div>
+</div>
 
-  </div>
 
 <div class="review">
     <div class="review__main">
@@ -87,7 +49,8 @@
 
 <div class="comment">
 		<h2 class="comment__label">Отзывы</h2>
-    <div class="comment__recalls">
+   
+ <div class="comment__recalls">
         <div class="comment__item">
             <img class="comment__img" src = "img/ava1.png"><br>Екатерина В.
             <div class="comment_social">
@@ -185,28 +148,11 @@
 	   </div>
 </div>
 
-<div class="footer">
-    <div class="footer__addres">
-        <p class="footer__addres-txt">г. Санкт-Петербург <br> Приморское ш. 600</p>
-    </div>
-    <div class="footer__ls">
-        <div class="logo">
-            <a href="index.html"><img class=footer__logo-img src="img/logo.png"></a>
-        </div>
-        <div class="footer__social">
-            <img class="footer__social-item" src="img/vk.png"/>
-            <img class="footer__social-item" src="img/inst.png"/>
-            <img class="footer__social-item" src="img/fb.png"/>
-        </div>
-    </div>
-    <div class="footer__info">
-        <p>+7 (812) 775 - 55 - 88<br>
-        <a href="mailto: info@greenvalley.ru">info@greenvalley.ru</a>
-        </p>
-    </div>
-</div>
+@@include('_include/footer.html')
 
 <!--<script src="js/script.js"></script>-->
 
+<!--
 </body>
 </html>
+-->

@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Room</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    
+    <script src="js/script.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
 </head>
 
@@ -13,11 +16,11 @@
   <header class="page-header">
       <div class="page-header__logo">
               <a href="index.html"><img class="page-header__logo" src ="img/logo.png"></a>
-          </div>
+      </div>
           <div class="main-nav">
               <ul class="main-nav__list">
-  				        <li class="main-nav__item"><a class="main-nav__link__active">НОМЕРА</a></li>
-  				        <li class="main-nav__item"><a class="main-nav__link">КОТТЕДЖ</a></li>
+  				  <li class="main-nav__item"><a href="room.html" class="main-nav__link__active">НОМЕРА</a></li>
+  				  <li class="main-nav__item"><a class="main-nav__link">КОТТЕДЖ</a></li>
                   <li class="main-nav__item"><a class="main-nav__link">РЕСТОРАН</a></li>
                   <li class="main-nav__item"><a class="main-nav__link">ОТДЫХ</li>
                   <li class="main-nav__item"><a class="main-nav__link">КОНТАКТЫ</li>
@@ -33,13 +36,19 @@
       </div>
   </header>
 
+
+
 <div class="room-card">
   <div class="room-card__about">
 	  <h1 class="room-card__title"><strong>Эконом</strong><br />От<span> 3400 </span>руб./сутки</h1>
   </div>
       <div class="room-card__photo">
+<!--       <div id="room-card__gallery" class="room-card__slider owl-carousel">-->
+<!--        <img class="room-card__photo" src="img/econom.png"/>-->
         <img class="room-card__photo" src="img/econom.png"/>
+        </div>
       </div>
+      
 	    <div class="room-card__description">
 		    <h2 class="room-card__text">О номере</h2>
 		      <p>В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны <br> на проживание 1-2 человек. Часть номеров с видом на Финский залив.</p>
@@ -66,8 +75,8 @@
 		</ul>
 		</div>
 	</div>
-</div>
-<div class="room-card__btn">
+
+ <div class="room-card__btn">
   <img class="room-card__btn" src="img/btn.png">
   <p>от <span> 3400 </span> руб./сутки </p>
 

@@ -258,6 +258,9 @@ body {
   text-align: center;
   display: block;
 }
+.review__all {
+  background-size: 1px;
+}
 .stock {
   text-align: center;
   border: solid 1px;
