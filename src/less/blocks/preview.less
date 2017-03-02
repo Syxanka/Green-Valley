@@ -3,6 +3,11 @@
   background-image: url(../img/fon.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+    
+    @media (min-width: @screen-sm) {
+		background-size: contain;
+		height: auto;
+	}
 
   &__tab {
     text-align: center;
@@ -30,9 +35,11 @@
     text-align: center;
     line-height: 1.5em;
 
-        @media (min-width: @screen-sm ){
-          
-        }
+        @media (min-width: @screen-sm) {
+			width: 560px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
 
       }
 

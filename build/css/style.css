@@ -620,6 +620,15 @@ body {
   .promo {
     height: 500px;
   }
+  .preview {
+    background-size: contain;
+    height: auto;
+  }
+  .preview__norm {
+    width: 560px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
